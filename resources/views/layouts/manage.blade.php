@@ -15,9 +15,10 @@
 </head>
 <body>
     @include('_include.navbar')
-        <div id="app">
-            @yield('content')
-        </div>
+        @include('_include.leftnav')
+            <div class="table-size-manage">
+                @yield('content')
+            </div>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
